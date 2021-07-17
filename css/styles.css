@@ -578,6 +578,7 @@ address {
 .footer-container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-link {
@@ -597,7 +598,7 @@ address {
   background-color: var(--accent-color);
 }
 
-.first-block {
+.first-block {ƒ
   margin-right: 70px;
 }
 
@@ -610,23 +611,76 @@ address {
   height: 20px;
 }
 
+.form-footer {
+  font-family: var(--main-font);
+
+font-weight: bold;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+margin-bottom: 20px;
+}
+
+.form-input {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.25;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  background-color: transparent;
+  letter-spacing: 0.03em;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+ border-radius: 4px;
+ color: #fff;
+}
+
+.form-input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.footer-btn {
+  display: inline-flex;
+    border: none;
+  padding: 10px 28px;
+  background-color: var(--accent-color);
+  color: white;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+font-family: var(--main-font);
+border-radius: 4px;
+font-weight: bold;
+font-size: 16px;
+line-height: 1.87;
+margin-left: 10px;
+
+
+}
+
+.footer-btn::after {
+  content: "";
+ width: 24px;
+ height: 24px;
+ margin-left: 10px;
+  background-image: url(../images/icon-send.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
 /* ======== END FOOTER  ========*/
 
 /* ======== PORTPHOLIO ========*/
 
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
 .filter {
   align-items: center;
   margin-right: 8px;
@@ -845,10 +899,15 @@ address {
   color: #757575;
   margin-bottom: 10px;
 }
+
+.modal-form-field:nth-child(5) {
+margin-bottom: 0;
+}
+
 .modal-form-input-wrapper {
   display: block;
   position: relative;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 .modal-form-icon {
@@ -903,52 +962,29 @@ address {
   outline: none;
   border-color: var(--accent-color);
 }
-/* 
-.modal-form-chekbox:checked + .modal-form-chekbox-label::before {
-  background-image: url(../images/icon-check.svg);
-} */
 
-/* .modal-form-chekbox:hover + .modal-form-chekbox-label::before {
-  background: var(--accent-color);
-} */
-
-/* .modal-form-chekbox-label::before {
-  display: block;
-  content: '';
-  cursor: pointer;
-  width: 16px;
-  height: 16px;
-  border: 1px solid var(--primary-text-color);
-  border-radius: 2px;
-  margin-right: 7px;
-} */
-
-/* .modal-form-chekbox-label {
-  display: flex;
-  align-items: center;
-  font-family: var(--main-font);
-
-  font-size: 14px;
-  line-height: 1.7;
-  identical to box height, or 171%
-
-  letter-spacing: 0.03em;
-  margin-bottom: 30px;
-
-  color: #757575;
-} */
 
 .modal-form-btn {
   align-self: center;
   border: none;
   background: #2196f3;
   border-radius: 4px;
-  width: 200px;
-  height: 50px;
-  margin-top: 30px;
+  padding: 10px 55px;
+ 
   color: #ffffff;
+  font-family: var(--main-font);
+
+font-weight: bold;
+font-size: 16px;
+line-height: 1.87;
+margin-top: 30px;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal-form-btn:focus,
@@ -961,7 +997,7 @@ address {
 .chekbox-label {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .icon {
