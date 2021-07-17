@@ -514,9 +514,11 @@
               placeholder="Введите текст"
             ></textarea>
           </label>
-          <input type="checkbox" class="modal-form-chekbox visually-hidden" id="accent-policy" />
-          <label for="accent-policy" class="modal-form-chekbox-label"
-            >Соглашаюсь с рассылкой и принимаю&nbsp;
+
+          <label class="chekbox-label">
+            <input class="checkbox visually-hidden" type="checkbox" name="topic" value="" />
+            <span class="icon"></span>
+            <span class="label">Соглашаюсь с рассылкой и принимаю&nbsp;</span>
             <a href="#" class="modal-form-label-link">Условия договора</a>
           </label>
           <button type="submit" class="modal-form-btn">Отправить</button>
