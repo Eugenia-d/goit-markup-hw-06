@@ -1022,6 +1022,16 @@ address {
   background-origin: border-box;
 }
 
+.checkbox:focus + .icon {
+  background-color: var(--accent-color);
+  background-image: url(../images/icon-check.svg);
+  border-color: var(--accent-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+}
+
 .label {
   font-family: var(--main-font);
   font-size: 14px;
