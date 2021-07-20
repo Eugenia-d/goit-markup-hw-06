@@ -1023,13 +1023,7 @@ address {
 }
 
 .checkbox:focus + .icon {
-  background-color: var(--accent-color);
-  background-image: url(../images/icon-check.svg);
   border-color: var(--accent-color);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-origin: border-box;
 }
 
 .label {
