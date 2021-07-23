@@ -114,7 +114,6 @@ body {
   color: var(--accent-color);
 }
 .logo {
-  margin-right: 95px;
   font-family: var(--secondary-font);
   font-weight: bold;
   font-size: 26px;
@@ -122,6 +121,11 @@ body {
   /* identical to box height */
   letter-spacing: 0.03em;
   color: #000000;
+}
+
+.header__logo {
+  margin-right: 95px;
+
 }
 
 .menu {
@@ -147,12 +151,12 @@ body {
   transition: var(--o-transition);
 }
 
-.current {
+.menu__link--current {
   color: var(--accent-color);
   transition: var(--o-transition);
 }
 
-.current::after {
+.menu__link--current::after {
   content: '';
 
   position: absolute;
